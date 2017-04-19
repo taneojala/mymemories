@@ -1,11 +1,13 @@
 First:
 - RDF presentation of TIME which is completely generic
-- covering point in time, period (start TIME, end TIME) , precise TIME (datetime), unprecise TIME (e.g. year, month-year, season-year, 
-decade, century)
+- covering point in time, period (start TIME, end TIME) , precise TIME (datetime), unprecise TIME (e.g. year, 
+month-year, season-year, decade, century)
 
-TIME can then be used by persons (foaf), events (historical events, myMemories)
+TIME can then be used by persons (foaf), events (historical events, myMemories). Maybe the time vocabulary 
+https://www.w3.org/TR/owl-time/ (instant and interval)
 
-PLACE is needed as well: lat-long, place name, hierarchy needed: country - city - ... + lat-long. Geonames is probably the best to start with: gn: http://www.geonames.org/ontology
+PLACE is needed as well: lat-long, place name, hierarchy needed: country - city - ... + lat-long. Geonames is probably 
+the best to start with: gn: http://www.geonames.org/ontology
 
 <rdf:RDF 
 	xmlns:cc="http://creativecommons.org/ns#" 
@@ -58,3 +60,6 @@ PLACE is needed as well: lat-long, place name, hierarchy needed: country - city 
   <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-04-19</dcterms:modified> - not used
 </foaf:Document> - not used
 </rdf:RDF>
+
+The EVENT vocabulary (http://motools.sourceforge.net/event/event.html) seems to tie these nicely together: use this first, 
+but TIME instead of TIMELINE
