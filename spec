@@ -63,3 +63,5 @@ the best to start with: gn: http://www.geonames.org/ontology
 
 The EVENT vocabulary (http://motools.sourceforge.net/event/event.html) seems to tie these nicely together: use this first, 
 but TIME instead of TIMELINE
+
+PERSON (foaf) and family relations: hasFather, hasMother, isSpouse
